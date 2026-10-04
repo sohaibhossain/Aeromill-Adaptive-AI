@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131c;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes pulse-subtle{0%,100%{opacity:1;}50%{opacity:0.4;}}.animate-pulse-subtle{animation:pulse-subtle 1.5s cubic-bezier(0.4,0,0.6,1) infinite;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#002113","primary-fixed-dim":"#00dbe9","inverse-primary":"#006970","error-container":"#93000a","outline":"#849495","surface-tint":"#00dbe9","on-error":"#690005","secondary-fixed-dim":"#4edea3","on-secondary-container":"#00311f","secondary-fixed":"#6ffbbe","surface-dim":"#0f131c","surface-container-low":"#181c24","on-tertiary":"#472a00","on-surface":"#dfe2ee","on-primary":"#00363a","on-primary-container":"#006970","tertiary-fixed":"#ffddb8","on-surface-variant":"#b9cacb","primary":"#dbfcff","outline-variant":"#3b494b","on-error-container":"#ffdad6","inverse-on-surface":"#2c3039","surface":"#0f131c","surface-bright":"#353942","inverse-surface":"#dfe2ee","on-primary-fixed-variant":"#004f54","error":"#ffb4ab","on-tertiary-fixed":"#2a1700","tertiary":"#fff3ea","surface-container-highest":"#31353e","on-background":"#dfe2ee","tertiary-fixed-dim":"#ffb95f","surface-container-high":"#262a33","surface-variant":"#31353e","primary-fixed":"#7df4ff","on-primary-fixed":"#002022","surface-container-lowest":"#0a0e16","secondary-container":"#00a572","secondary":"#4edea3","tertiary-container":"#ffd19c","on-secondary-fixed-variant":"#005236","on-tertiary-fixed-variant":"#653e00","primary-container":"#00f0ff","on-tertiary-container":"#855300","on-secondary":"#003824","surface-container":"#1c2028","background":"#0f131c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-lg":"1.5rem","space-lg":"1.25rem","space-sm":"0.5rem","gutter-md":"1rem","margin":"1rem","space-md":"0.75rem","gutter":"0.75rem","space-xl":"1.75rem","space-xs":"0.25rem"},"fontFamily":{"telemetry-sm":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"body-md":["Inter"],"body-lg":["Inter"],"telemetry-md":["JetBrains Mono"],"headline-sm":["Space Grotesk"],"headline-md":["Space Grotesk"],"telemetry-lg":["JetBrains Mono"],"display-lg-mobile":["Space Grotesk"],"body-sm":["Inter"],"display-lg":["Space Grotesk"]},"fontSize":{"telemetry-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"400"}],"label-caps":["10px",{"lineHeight":"12px","letterSpacing":"0.08em","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"telemetry-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"telemetry-lg":["20px",{"lineHeight":"24px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"display-lg":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/85 backdrop-blur-xl pt-safe shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-20 px-space-md flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between w-full"><div class="flex items-center gap-space-sm"><img alt="AeroMill AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UBkWKAEmYDqo8kTf6uhN2jL_doCdsEqZLYsWYrJb32mObJRIEr2lFMO4aWTKT1hgzoVO_pA3s73ffglWYqsTSzTQ2v0WJZ-KM2CGzMU1pRZaCgrqN2TpDPcWj62ALkfoa-KckGAOSaPaEYCj58xTmiOJy4qzCwaDzoHcIb-1K8yW2PqcpZ8mTImvEdBasBXUqfmTZ6lwGgwSrinpdLjigivg_aLjl7qN76VPwnEo8KDqLzvNSm8LaDDQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold leading-none">AeroMill-AI</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Ti-6Al-4V Mission Ops</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-high rounded-full shadow-[0_0_12px_rgba(78,222,163,0.15)]"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse-subtle"></span><span class="font-label-caps text-label-caps text-secondary uppercase font-bold tracking-wider">CLOSED-LOOP</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between px-space-xs"><div class="flex items-center gap-2"><span class="font-telemetry-sm text-telemetry-sm text-on-surface-variant font-medium">SPINDLE 01</span><span class="text-outline text-telemetry-sm">•</span><span class="font-telemetry-sm text-telemetry-sm text-primary-fixed-dim font-bold">12,450 RPM</span><span class="text-outline text-telemetry-sm">•</span><span class="font-label-caps text-label-caps text-secondary font-semibold">ONLINE</span></div><div class="flex items-center gap-1"><span class="font-label-caps text-label-caps text-outline uppercase">SYS:</span><span class="font-label-caps text-label-caps text-on-surface uppercase">Ai Agent</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-space-xl gap-space-md">
+<!-- Top Hero Engine Status Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-xl flex flex-col gap-space-sm">
+<div class="absolute -right-10 -top-10 w-36 h-36 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_10px_rgba(78,222,163,0.8)] animate-pulse-subtle"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">LangGraph Engine v2.4</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-space-xs py-0.5 rounded-full">
+<span class="font-telemetry-sm text-telemetry-sm text-outline">CYCLE:</span>
+<span class="font-telemetry-sm text-telemetry-sm text-primary font-bold">14.2 ms</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Closed-Loop Autonomous Controller</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Real-time vibration tensor fusion on Ti-6Al-4V airframe stock</span>
+</div>
+<!-- As-Is vs To-Be Comparative Module -->
+<div class="grid grid-cols-2 gap-space-xs mt-space-xs">
+<div class="flex flex-col p-space-xs bg-surface-container-low rounded-lg gap-1">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">history</span>
+<span class="font-label-caps text-label-caps uppercase">As-Is Process</span>
+</div>
+<span class="font-telemetry-sm text-telemetry-sm text-outline leading-tight">Static G-Code Baseline</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Conservative S/F, delayed operator intervention</span>
+</div>
+<div class="flex flex-col p-space-xs bg-surface-container-high rounded-lg gap-1 shadow-[inset_0_1px_0_rgba(0,240,255,0.2)]">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[14px] text-secondary">bolt</span>
+<span class="font-label-caps text-label-caps uppercase font-bold text-secondary">To-Be State</span>
+</div>
+<span class="font-telemetry-sm text-telemetry-sm text-primary-fixed-dim font-bold leading-tight">Sense → Decide → Act</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim font-medium">&lt;20 ms latency reactive mitigation</span>
+</div>
+</div>
+</div>
+<!-- Real-time Specimen Image Panel -->
+<div class="relative w-full h-36 rounded-xl overflow-hidden bg-surface-container-low shadow-md flex items-end p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="High precision CNC 5-axis titanium milling tool cutting grade 5 Ti-6Al-4V turbine blade blank inside illuminated aerospace machining cell with high pressure coolant mist, cyan HUD ambient reflection, edge lighting, cinematic industrial photography, dark titanium palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZB3yieCZafUwwQ4j8qg1z5Kp3bPRZVGRhb0q30YCffThqWJBomi3MwhKmAUifUQNX-OYXKK_jgzGni2mgnyE2QgKWVf9BsncJ4KQBy9k1H8HGowI628D361e5X_DCO-EsLoTpT1IuKk6Nwryj6Lrfa9wPLZy1NLTkKOhz2DQu3z7PqbqS3L4DIn2YmFQlrQJ5u5tO6XZYJDOb2ueRiuCkvAcyFHHzZiicVL408tSXNk8_rrYUY8Fr"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<div class="relative z-10 flex items-center justify-between w-full">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Active Cutter Geometry</span>
+<span class="font-telemetry-md text-telemetry-md text-primary font-bold">Ø16mm 4-Flute AlTiN Bullnose</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-highest/90 backdrop-blur-md px-space-xs py-1 rounded">
+<span class="material-symbols-outlined text-secondary text-[16px]">sensors</span>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface">3-AXIS ACCEL</span>
+</div>
+</div>
+</div>
+<!-- Chatter Classification & Severity Matrix -->
+<div class="flex flex-col rounded-xl bg-surface-container p-space-md shadow-lg gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">warning</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider">Classification Event</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Lobe 3 Regenerative Instability</span>
+</div>
+</div>
+<span class="bg-surface-container-high text-tertiary-fixed-dim font-telemetry-sm text-telemetry-sm px-2 py-0.5 rounded-full font-bold">0.88g PK</span>
+</div>
+<!-- Severity Meter -->
+<div class="flex flex-col gap-1.5 mt-1">
+<div class="flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Harmonic Risk Probability</span>
+<span class="font-telemetry-md text-telemetry-md text-tertiary-fixed-dim font-bold">MEDIUM (68.4%)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden flex">
+<div class="h-full bg-secondary rounded-full" style="width: 35%"></div>
+<div class="h-full bg-tertiary-container rounded-r-full shadow-[0_0_12px_rgba(255,185,95,0.6)]" style="width: 33.4%"></div>
+<div class="h-full bg-surface-container-highest" style="width: 31.6%"></div>
+</div>
+<div class="flex justify-between font-label-caps text-label-caps text-outline">
+<span>0.0 STABLE</span>
+<span>0.5 THRESHOLD</span>
+<span>1.0 CRITICAL</span>
+</div>
+</div>
+<!-- Harmonic Peak Diagnostic SVG Readout -->
+<div class="flex flex-col p-space-sm bg-surface-container-lowest rounded-lg gap-space-xs mt-1">
+<div class="flex justify-between items-center">
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface-variant">HARMONIC SPIKE: <span class="text-primary font-bold">2,418 Hz</span></span>
+<span class="font-label-caps text-label-caps text-error uppercase">Tool Mode 2 Coupled</span>
+</div>
+<!-- Compact Spectrum SVG representation -->
+<svg class="w-full h-12 text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 280 48">
+<path d="M0,42 L30,41 L55,42 L75,38 L95,41 L115,39 L130,42 L145,28 L152,4 L158,32 L170,41 L195,40 L220,41 L245,39 L280,42" stroke="#3b494b" stroke-linecap="round" stroke-width="1.5"></path>
+<path d="M140,48 L145,28 L152,4 L158,32 L165,48 Z" fill="rgba(0, 240, 255, 0.15)"></path>
+<path d="M145,28 L152,4 L158,32" stroke="#00f0ff" stroke-linecap="round" stroke-width="2.5"></path>
+<circle class="animate-pulse" cx="152" cy="4" fill="#ffb95f" r="3"></circle>
+</svg>
+<div class="flex justify-between font-label-caps text-label-caps text-outline">
+<span>500 Hz</span>
+<span class="text-tertiary-fixed-dim">▲ 2,418 Hz (Spindle Mode Peak)</span>
+<span>5,000 Hz</span>
+</div>
+</div>
+</div>
+<!-- LangGraph Autonomous Reasoning Log -->
+<div class="flex flex-col rounded-xl bg-surface-container p-space-md shadow-md gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">LangGraph Execution DAG</span>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-2 py-0.5 rounded uppercase">State: REASONING</span>
+</div>
+<!-- Reasoning Steps Stack -->
+<div class="flex flex-col gap-space-xs mt-1">
+<!-- Step 1 -->
+<div class="flex items-start gap-space-sm p-space-xs bg-surface-container-low rounded-lg">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary font-bold">NODE 01: SENSE &amp; DETECT</span>
+<span class="font-telemetry-sm text-telemetry-sm text-outline">0.4ms</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight">PyTorch 1D-CNN flagged resonant spike at 2,418 Hz surpassing 0.72g vibration envelope threshold.</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-sm p-space-xs bg-surface-container-low rounded-lg">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary font-bold">NODE 02: STABILITY LOBE (SLD)</span>
+<span class="font-telemetry-sm text-telemetry-sm text-outline">3.1ms</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight">Queried dynamic compliance matrix for 4-flute carbide tool in Grade 5 Ti-6Al-4V bulk stock.</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-sm p-space-xs bg-surface-container-high rounded-lg shadow-[inset_0_1px_0_rgba(0,240,255,0.2)]">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 mt-0.5 animate-pulse-subtle">
+<span class="material-symbols-outlined text-[14px]">auto_fix_high</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary font-bold">NODE 03: OPTIMIZATION POCKET</span>
+<span class="font-telemetry-sm text-telemetry-sm text-primary font-bold">6.8ms</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight">Calculated sweet spot: S=11,850 RPM (-4.8%), F=1,720 mm/min (-6.5%) within safe stability valley.</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-space-sm p-space-xs bg-surface-container-low rounded-lg">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">sync_alt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline font-bold">NODE 04: MCP DISPATCH</span>
+<span class="font-telemetry-sm text-telemetry-sm text-outline">QUEUED</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Model Context Protocol packet ready to transmit override to Siemens 840D NC-Kernel.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Autonomous Action Mode & Toggle Card -->
+<div class="flex flex-col rounded-xl bg-surface-container p-space-md shadow-md gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Execution Protocol</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Controller authority delegation level</span>
+</div>
+<!-- Autonomous Toggle Switch Interaction -->
+<button aria-checked="true" class="relative inline-flex h-8 w-14 shrink-0 cursor-pointer rounded-full bg-secondary transition-colors duration-200 ease-in-out p-1 focus:outline-none shadow-[0_0_12px_rgba(78,222,163,0.3)]" id="mode-toggle-btn" role="switch">
+<span class="pointer-events-none inline-block h-6 w-6 transform rounded-full bg-on-secondary-fixed shadow-md transition duration-200 ease-in-out translate-x-6" id="mode-toggle-thumb"></span>
+</button>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-xs rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse-subtle" id="mode-led"></span>
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase" id="mode-text">FULL AUTONOMOUS MCP EXECUTION</span>
+</div>
+<span class="font-telemetry-sm text-telemetry-sm text-outline">ZERO-WAIT</span>
+</div>
+<!-- Recommended Parameter Modification Readout -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<span class="font-label-caps text-label-caps text-outline uppercase">Computed Parameter Adaptation</span>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Spindle Modulation -->
+<div class="flex flex-col p-space-sm bg-surface-container-high rounded-lg gap-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SPINDLE SPEED (S)</span>
+<div class="flex items-baseline gap-1">
+<span class="font-telemetry-sm text-telemetry-sm text-outline line-through">12,450</span>
+<span class="material-symbols-outlined text-[12px] text-primary">arrow_forward</span>
+<span class="font-telemetry-lg text-telemetry-lg text-primary font-bold">11,850</span>
+</div>
+<div class="flex justify-between items-center text-secondary font-telemetry-sm text-telemetry-sm">
+<span>RPM</span>
+<span class="bg-surface-container px-1 py-0.5 rounded text-secondary-fixed font-bold">-4.8%</span>
+</div>
+</div>
+<!-- Feed Rate Modulation -->
+<div class="flex flex-col p-space-sm bg-surface-container-high rounded-lg gap-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">FEED RATE (F)</span>
+<div class="flex items-baseline gap-1">
+<span class="font-telemetry-sm text-telemetry-sm text-outline line-through">1,840</span>
+<span class="material-symbols-outlined text-[12px] text-primary">arrow_forward</span>
+<span class="font-telemetry-lg text-telemetry-lg text-primary font-bold">1,720</span>
+</div>
+<div class="flex justify-between items-center text-secondary font-telemetry-sm text-telemetry-sm">
+<span>MM/MIN</span>
+<span class="bg-surface-container px-1 py-0.5 rounded text-secondary-fixed font-bold">-6.5%</span>
+</div>
+</div>
+</div>
+<!-- Expected Chatter Suppression Stat Banner -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span class="font-body-md text-body-md text-on-surface">Expected Chatter Suppression</span>
+</div>
+<span class="font-telemetry-lg text-telemetry-lg text-secondary font-bold tracking-tight">94.2%</span>
+</div>
+</div>
+</div>
+<!-- Primary Interactive Control Buttons -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<button class="w-full flex items-center justify-center gap-space-xs bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase font-bold py-3.5 px-space-md rounded-xl shadow-[0_0_20px_rgba(0,240,255,0.35)] active:scale-[0.98] transition-transform" id="btn-execute">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Execute Parameter Modulation</span>
+</button>
+<button class="w-full flex items-center justify-center gap-space-xs bg-surface-container-high text-on-surface hover:text-primary font-label-caps text-label-caps uppercase font-semibold py-3 px-space-md rounded-xl active:scale-[0.98] transition-colors" id="btn-lobe-view">
+<span class="material-symbols-outlined text-[18px]">stacked_line_chart</span>
+<span>View Stability Lobe Overlay</span>
+</button>
+</div>
+<!-- Tech Context Badges Panel -->
+<div class="flex flex-col rounded-xl bg-surface-container-low p-space-sm gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">Stack Telemetry Context</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">Healthy</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[13px] text-primary">hub</span>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface">LangGraph + MCP</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">model_training</span>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface">PyTorch Chatter v3</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[13px] text-secondary">memory</span>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface">Local LLM: Ollama</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[13px] text-outline">dns</span>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface-variant">OpenRouter Fallback</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Autonomous toggle interactive logic
+  const toggleBtn = document.getElementById('mode-toggle-btn');
+  const toggleThumb = document.getElementById('mode-toggle-thumb');
+  const modeText = document.getElementById('mode-text');
+  const modeLed = document.getElementById('mode-led');
+  const execBtn = document.getElementById('btn-execute');
+
+  let isAutonomous = true;
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      isAutonomous = !isAutonomous;
+      if (isAutonomous) {
+        toggleBtn.classList.remove('bg-surface-container-highest');
+        toggleBtn.classList.add('bg-secondary');
+        toggleThumb.classList.remove('translate-x-0');
+        toggleThumb.classList.add('translate-x-6');
+        modeText.textContent = 'FULL AUTONOMOUS MCP EXECUTION';
+        modeText.classList.remove('text-on-surface-variant');
+        modeText.classList.add('text-secondary');
+        modeLed.classList.remove('bg-outline');
+        modeLed.classList.add('bg-secondary');
+        execBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">bolt</span><span>Execute Parameter Modulation</span>';
+      } else {
+        toggleBtn.classList.remove('bg-secondary');
+        toggleBtn.classList.add('bg-surface-container-highest');
+        toggleThumb.classList.remove('translate-x-6');
+        toggleThumb.classList.add('translate-x-0');
+        modeText.textContent = 'HUMAN-IN-THE-LOOP CONFIRMATION';
+        modeText.classList.remove('text-secondary');
+        modeText.classList.add('text-on-surface-variant');
+        modeLed.classList.remove('bg-secondary');
+        modeLed.classList.add('bg-outline');
+        execBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">thumb_up</span><span>Authorize Modulation Plan</span>';
+      }
+    });
+  }
+
+  if (execBtn) {
+    execBtn.addEventListener('click', () => {
+      execBtn.classList.add('scale-95');
+      setTimeout(() => {
+        execBtn.classList.remove('scale-95');
+        execBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Parameters Injected via MCP</span>';
+        execBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        execBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      }, 300);
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-primary-container bg-surface-container-high shadow-[inset_0_1px_0_rgba(0,240,255,0.4)]"><div class="flex items-center justify-around h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-2 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="telemetry-fft" href="#"><span class="material-symbols-outlined text-[22px]">ssid_chart</span><span class="font-label-caps text-label-caps uppercase text-center leading-tight">Telemetry</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-2 py-1.5 rounded-lg transition-colors text-primary-container bg-surface-container-high shadow-[inset_0_1px_0_rgba(0,240,255,0.4)]" data-path="ai-agent" href="#"><span class="material-symbols-outlined text-[22px]">neurology</span><span class="font-label-caps text-label-caps uppercase text-center leading-tight">Agent</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-2 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="gcode-diff" href="#"><span class="material-symbols-outlined text-[22px]">difference</span><span class="font-label-caps text-label-caps uppercase text-center leading-tight">G-Code</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-2 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="simulator" href="#"><span class="material-symbols-outlined text-[22px]">tune</span><span class="font-label-caps text-label-caps uppercase text-center leading-tight">Simulator</span></a></div></nav></body></html>
